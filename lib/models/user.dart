@@ -1,6 +1,6 @@
 class User {
   String _token;
-  DateTime _expire;
+  String _expire;
 
   User(this._token, this._expire);
 
@@ -11,7 +11,7 @@ class User {
 
   String get token => _token;
 
-  DateTime get expire => _expire;
+  String get expire => _expire;
 
   Map<String, dynamic> toMap() {
     var map = new Map<String, dynamic>();
